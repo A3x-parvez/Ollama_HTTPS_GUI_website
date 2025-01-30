@@ -1,5 +1,17 @@
 import streamlit as st
 import ollama
+import subprocess
+
+def start_ollama_server():
+    try:
+        subprocess.Popen(["ollama", "serve"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        print("Ollama server started successfully.")
+    except Exception as e:
+        print(f"Error starting Ollama server: {e}")
+    
+    
+# Start the Ollama server
+start_ollama_server()
 
 # Set page config before any other Streamlit command
 st.set_page_config(page_title="Ollama AI Chat", layout="centered")
@@ -14,9 +26,13 @@ st.markdown(
         margin-bottom: -20px; ">Select the LLM Model :</span>""",
     unsafe_allow_html=True)
 
+model_list = ollama.list()
+model_names = tuple(model.model for model in model_list.models)
+
 model = st.selectbox(
     '',
-    ('llama3.2:1b', 'phi3', 'gemma2:2b'), 
+    # ('llama3.2:1b', 'phi3', 'gemma2:2b'), 
+    model_names,
     label_visibility="collapsed"
 )
 
@@ -41,7 +57,7 @@ if st.button("Generate Response"):
         with st.spinner("Generating response..."):
             try:
                 response = ollama.chat(model=OLLAMA_MODEL, messages=[{"role": "user", "content": prompt}])
-                st.success("Here is the Ans :")
+                st.success("Here is the Ans : ")
                 st.write(response["message"]["content"])
             except Exception as e:
                 st.error(f"Error: {str(e)}")
