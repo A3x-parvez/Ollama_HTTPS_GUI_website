@@ -1,0 +1,33 @@
+<html><body><span style='font-size:19px; color: #ff5c33; font-weight: bold;'>👤You :</span><br>write a markdown file demo
+<br><span style='font-size:19px; color: #ff5c33; font-weight: bold;'>🤖AI :</span><br>Here's a simple Markdown file with a table, headings, and paragraphs.
+
+```markdown
+# Introduction
+
+This is an introduction to Markdown. It uses tables, headings, and paragraphs.
+
+## Table of Contents
+
+*   [Table of Contents](table_of_contents.md)
+```
+
+Let me create the markdown file for you:
+
+**demo.txt**
+```markdown
+# Introduction
+## Table of Contents
+
+*   [Table of Contents](table_of_contents.md)
+
+This is an introduction to Markdown. It uses tables, headings, and paragraphs.
+
+### Paragraphs
+
+You can add multiple paragraphs inside a heading like this: 
+### This is a paragraph with multiple lines:
+
+This text will be displayed as a single block.
+```
+
+Let me create the markdown file for you using your description<br></body></html>
