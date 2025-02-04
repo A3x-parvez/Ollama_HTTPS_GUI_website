@@ -1,0 +1,6 @@
+streamlit
+ollama
+subprocess
+time
+datetime
+re
