@@ -71,17 +71,33 @@ with st.sidebar:
     if st.button("Install Model", use_container_width=True):
         if new_model.strip():
             try:
-                install_progress.progress(0)  # Initialize the progress bar
-                st.write(f"Installing model '{new_model.strip()}'... Please wait.")
-                
-                # Run the model installation with subprocess
-                result = subprocess.run(
+                # install_progress.progress(0)  # Initialize the progress bar
+                # st.write(f"Installing model '{new_model.strip()}'... Please wait.")
+                # progress_placeholder = st.empty()  # Placeholder for updating progress
+
+                # # Run the model installation with subprocess
+                # result = subprocess.run(
+                #     ["ollama", "pull", new_model.strip()],
+                #     stdout=subprocess.PIPE,
+                #     stderr=subprocess.PIPE,
+                #     text=True,
+                #     check=True
+                # )
+
+                st.write(f"Downloading model: `{new_model.strip()}`...")  # Display the model name
+                progress_placeholder = st.empty()  # Placeholder for updating progress
+
+                result = subprocess.Popen(
                     ["ollama", "pull", new_model.strip()],
                     stdout=subprocess.PIPE,
                     stderr=subprocess.PIPE,
-                    text=True,
-                    check=True
+                    text=True
                 )
+
+                for line in iter(result.stdout.readline, ""):
+                    progress_placeholder.text(line.strip())  # Update Streamlit UI with progress
+
+                result.wait()  # Wait
                 
                 # Check for the result and handle success
                 if result.returncode == 0:
