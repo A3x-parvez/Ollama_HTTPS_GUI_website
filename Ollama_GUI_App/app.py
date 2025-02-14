@@ -199,7 +199,7 @@ with st.sidebar:
         st.rerun()  # Refresh UI
 
 # Main Page - Chat Interface
-st.markdown("""<span style ="color: red; font-weight: bold; font-size: 43px;">Ollama AI Chatbot 🤖</span>""", unsafe_allow_html=True)
+st.markdown("""<span style ="color: #ff5c33; font-weight: bold; font-size: 43px;">Ollama AI Chatbot 🤖</span>""", unsafe_allow_html=True)
 
 # Chat Input Section
 st.markdown("""<span style ="color: white; font-weight: bold; font-size: 20px;"> Chat with the Model : </span>""", unsafe_allow_html=True)
