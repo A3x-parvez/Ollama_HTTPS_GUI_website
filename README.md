@@ -8,6 +8,10 @@ A simple AI chatbot built using **Streamlit** and **Ollama**, allowing users to 
 - ⚡ **Real-time AI Responses**: Generates responses from the selected model.
 - 🚀 **Error Handling**: Displays error messages when an issue occurs.
 
+## Demo
+
+![Demo Image](demo.png)
+
 ## Installation
 
 1. **Clone the repository**:

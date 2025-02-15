@@ -1,5 +1,4 @@
-<html><body><span style='font-size:19px; color: #ff5c33; font-weight: bold;'>👤You :</span><br>write a java for factorial of num and explain the approach 1st then write the code<br><span style='font-size:19px; color: #ff5c33; font-weight: bold;'>🤖AI :</span><br>
-**Approach**
+<html><body><span style='font-size:19px; color: #ff5c33; font-weight: bold;'>👤You :</span><br>write a java for factorial of num and explain the approach 1st then write the code<br><span style='font-size:19px; color: #ff5c33; font-weight: bold;'>🤖AI :</span><br>**Approach**
 
 The factorial of a number `n`, denoted by `n!`, is the product of all positive integers less than or equal to `n`. For example, `5! = 5 * 4 * 3 * 2 * 1 = 120`.
 

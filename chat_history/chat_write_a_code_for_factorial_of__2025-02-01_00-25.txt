@@ -1,0 +1,13 @@
+<span style='font-size:19px; color: #ff5c33; font-weight: bold;'>👤You :</span> write a code for factorial of n num<br><span style='font-size:19px; color: #ff5c33; font-weight: bold;'>🤖AI :</span> Here's an example in Python that calculates the factorial of a given number `n`. This implementation uses recursion:
+
+```python
+def fact(n):
+    if n == 0 or n == 1: # Base case when n is either 0 or self-reports as being one.
+        return 1
+    else:
+        result = n * fact(n-1) # Recursive call to calculate the factorial of (n - 1).
+        return result
+
+# Testing the function with some values for `n`
+print(fact(5)) # Outputs: 120, as expected because the mathematical expression is calculated like this: 5*4*3*2*1 = 120.
+```
