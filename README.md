@@ -23,3 +23,19 @@ A simple AI chatbot built using **Streamlit** and **Ollama**, allowing users to 
    streamlit run main2.py
    ```
    #### NOTE : Before use the application download and install ollama app and download some llm models and start the server by simpley run the app or run the command `ollama serve`.
+
+## Demo Video 
+
+[Linkdin post video](https://www.linkedin.com/posts/rijwanool-karim_ai-machinelearning-chatbot-activity-7296259355367149568-6xs7?utm_source=social_share_video_v2&utm_medium=android_app&rcm=ACoAAD7t-bcBn5xFRO_nd01ge9Zw6O1XSL8C6lk&utm_campaign=copy_link)
+
+## Contact☎️
+
+For inquiries or support, reach out via:
+- 📧 Email: rijwanoolkarim143r@gmail.com
+- 🐦 Linkedin: [Rijwanool Karim](https://www.linkedin.com/in/rijwanool-karim)
+- 📘 GitHub Issues: [A3x-Parvez](https://github.com/A3x-parvez)
+
+## Acknowledgments👍
+
+Special thanks to the open-source community and ollama for building amazing AI tools! 🚀
+
